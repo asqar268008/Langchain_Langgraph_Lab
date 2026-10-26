@@ -1,7 +1,11 @@
 python-dotenv
 langchain
 langgraph
+pinecone
 langchain-google-genai
 langchain-ollama
 langgraph-checkpoint-postgres
+langchain-pinecone
 psycopg-binary
+langchain-huggingface 
+sentence-transformers
