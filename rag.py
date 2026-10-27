@@ -42,17 +42,17 @@ vectorstore = PineconeVectorStore(
     embedding=embeddings,
 )
 
-# documents = [
-#     Document(page_content="This is the first document."),
-#     Document(page_content="I am Asqar from Trichy"),
-#     Document(page_content="I am currently working on a project related to AI and machine learning."),
-#     Document(page_content="I have experience in Python, JavaScript, and data analysis."),
-#     Document(page_content="I am interested in exploring new technologies and staying updated with the latest trends in the tech industry."),
-# ]
+documents = [
+    Document(page_content="This is the first document."),
+    Document(page_content="I am Asqar from Trichy"),
+    Document(page_content="I am currently working on a project related to AI and machine learning."),
+    Document(page_content="I have experience in Python, JavaScript, and data analysis."),
+    Document(page_content="I am interested in exploring new technologies and staying updated with the latest trends in the tech industry."),
+]
 
-# vectorstore.add_documents(documents)
+vectorstore.add_documents(documents)
 
-# print("Document Inserted successfully!")
+print("Document Inserted successfully!")
 
 retriever = vectorstore.as_retriever(
     search_type = "similarity",
